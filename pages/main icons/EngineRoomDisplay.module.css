@@ -1,0 +1,121 @@
+.engineRoomDisplay {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 20px;
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.engineSpeedGauge,
+.engineOilPressureGauge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gaugeDial {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  background-color: #2c2c2c;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.gaugeNeedle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  width: 80px;
+  height: 8px;
+  background-color: #ff0000;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.gaugeLabel {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.gaugeValue {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.engineParameters {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.parameterRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.parameterLabel {
+  font-size: 14px;
+}
+
+.parameterValue {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.engineRoomImage {
+  grid-column: 1 / 4;
+  grid-row: 2 / 4;
+  overflow: hidden;
+}
+
+.engineRoomImage img {
+  width: 100%;
+  height: auto;
+}
+
+.engineStatus {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.statusItem {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.engineData {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.dataItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.dataLabel {
+  font-size: 14px;
+}
+
+.dataValue {
+  font-size: 16px;
+  font-weight: bold;
+}
